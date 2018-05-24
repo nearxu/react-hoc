@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "props-type";
-
+import withHeader from './withHeader';
 class Page extends Component {
   constructor(props) {
     super(props);
@@ -32,3 +32,5 @@ class Page extends Component {
     );
   }
 }
+
+export default withHeader(Page)
